@@ -187,7 +187,7 @@ public class Player : Singleton<Player> {
 
         UpdatePlayerHeight();
     }
-
+    
     private void BuildBridge(Bridge bridge) {
         RemoveTopBrick();
         bridge.AddBrickToBridge();
