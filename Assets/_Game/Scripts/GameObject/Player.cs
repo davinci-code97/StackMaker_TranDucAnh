@@ -138,6 +138,7 @@ public class Player : Singleton<Player> {
     }
 
     private void CheckRaycast() {
+        if (direction == Direction.None) return;
         if (Physics.Raycast(transform.position, transform.forward, out raycastHit, raycastRange)) {
             CheckWall();
             CheckPlatform();
